@@ -9,3 +9,4 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:price].any?
     assert product.errors[:image_url].any?
 end
+end
