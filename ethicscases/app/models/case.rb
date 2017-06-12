@@ -4,5 +4,5 @@ class Case < ApplicationRecord
 
   validates :title, :year, :author, :abstract, :subject, presence: true
   validates :title, uniqueness: true
-  validates :year, legnth: { is: 4 }
+  validates :year, length: { is: 4 }
 end
