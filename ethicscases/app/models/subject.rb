@@ -4,5 +4,6 @@ class Subject < ApplicationRecord
 
   validates :subject, presence: true
   validates :subject, length: { minimum: 2 }
+  validates :subject, uniqueness: true
 
 end
