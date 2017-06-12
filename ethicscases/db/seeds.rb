@@ -1,12 +1,11 @@
 Case.destroy_all
 
-Case:create! ([{
+Case.create!([{
   title: "The Whistle-Blower",
   author: "Peggy Connolley",
   abstract: "Research assistant blows whistle on supervisor.",
   year: "1999",
   subject: "whistleblowing",
-  subject: "mentoring",
 },
 
 {
@@ -16,7 +15,6 @@ Case:create! ([{
               overworked and underpaid",
   year: "2016",
   subject: "mentoring",
-  subject: "culture"
 }])
 
 p "Created #{Case.count} cases"
