@@ -3,11 +3,11 @@ require 'test_helper'
 class CaseTest < ActiveSupport::TestCase
   def new_case
     Case.new(title: "My Case Title",
-              year: "yyyy"
-              author: "yyy"
-              abstract: "yyyy"
+              year: "yyyy",
+              author: "yyy",
+              abstract: "yyyy",
               subject: "yyy")
-end
+  end
 
   test "should have a title author year subject and abstract" do
     case = Case.new
