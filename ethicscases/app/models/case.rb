@@ -5,7 +5,7 @@ class Case < ApplicationRecord
   validates :title, uniqueness: true
   validates :year, length: { is: 4 }
   validates :year, format: {
-    with: \d{4}\z/,
-    message "subject must be xxxx"
+    with: /\d{4}\z/,
+    message: "subject must be xxxx"
   }
 end
