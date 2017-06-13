@@ -10,7 +10,8 @@ class CaseTest < ActiveSupport::TestCase
   end
 
   test "should have a title author year subject and abstract" do
-    case = Case.new
-    assert case.invalid?
-    assert case.errors[:title].any?
+    test_case = Case.new
+    assert test_case.invalid?
+    assert test_case.errors[:title].any?
+  end
 end
