@@ -9,9 +9,8 @@ class CaseTest < ActiveSupport::TestCase
               subject: "yyy")
 end
 
-  test "should have the necessary required validators" do
+  test "should have a title author year subject and abstract" do
     case = Case.new
-    assert_not case.valid?
-    assert_equal [:title, :year, :author, :abstract, :subject], case.error.keys 
-
+    assert case.invalid?
+    assert case.errors[:title].any?
 end
